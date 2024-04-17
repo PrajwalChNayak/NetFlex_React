@@ -19,7 +19,7 @@ npm install netflex-react
 
 ## Usage
 Importing
-import { POSTNETWORK, GETNETWORK, PUTNETWORK, PATCHNETWORK, DELETENETWORK } from 'network-utility-functions';
+import { POSTNETWORK, GETNETWORK, PUTNETWORK, PATCHNETWORK, DELETENETWORK } from 'netflex-react';
 
 ## Making HTTP Requests
 
