@@ -54,11 +54,11 @@ export const GETNETWORK = async (url, token = false) => {
     return await createRequest(url, 'GET', null, token, false);
 };
 
-export const PUTNETWORK = async (url, payload, token = false, isFormData = false) => {
+export const PUTNETWORK = async (url, payload=null, token = false, isFormData = false) => {
     return await createRequest(url, 'PUT', payload, token, isFormData);
 };
 
-export const PATCHNETWORK = async (url, payload, token = false, isFormData = false) => {
+export const PATCHNETWORK = async (url, payload=null, token = false, isFormData = false) => {
     return await createRequest(url, 'PATCH', payload, token, isFormData);
 };
 
