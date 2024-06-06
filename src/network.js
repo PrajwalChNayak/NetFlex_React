@@ -11,7 +11,7 @@ const addAuthorizationHeader = async (headers, token) => {
 
 const handleResponse = async (response) => {
     if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+        throw new Error(`HTTP error! Status: ${response}`);
     }
     return await response.json();
 };
