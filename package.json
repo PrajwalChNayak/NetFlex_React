@@ -1,6 +1,6 @@
 {
   "name": "netflex-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "NetFlex_React is a flexible and versatile network service library for React and React Native applications. It provides a convenient way to make HTTP requests with support for various data formats and authentication methods.",
   "main": "index.js",
   "scripts": {

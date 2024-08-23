@@ -9,12 +9,6 @@ const addAuthorizationHeader = async (headers, token) => {
     }
 };
 
-const handleResponse = async (response) => {
-    // if (!response.ok) {
-    //     throw new Error(`HTTP error! Status: ${response}`);
-    // }
-    return await response.json();
-};
 
 const createRequest = async (url, method, payload = null, token = false, isFormData = false) => {
     const headers = { ...defaultHeaders };
@@ -39,10 +33,10 @@ const createRequest = async (url, method, payload = null, token = false, isFormD
 
     try {
         const response = await fetch(url, requestOptions);
-        return await handleResponse(response);
+        return response.json();
     } catch (error) {
         console.error('Error:', error);
-        throw error;
+        return error;
     }
 };
 
